@@ -2,6 +2,12 @@
 
 <h2>Fill in the form for a quick call</h2>
 
+<% if local_assigns.has_key? :errors %>
+  <% errors.each do |error| %>
+    <p><%= error %></p>
+  <% end %>
+<% end %>
+
 <form action='/form' method='post'>
 
   <div>
