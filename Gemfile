@@ -16,6 +16,7 @@ gem 'simple_form'
 gem 'sprockets-rails', require: 'sprockets/railtie'
 gem 'turbolinks', '~> 5.0.0'
 gem 'uglifier', '4.1.3'
+gem 'responders'
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
@@ -45,6 +46,7 @@ group :test do
   gem 'shoulda-matchers'
   gem 'vcr', '~> 4.0'
   gem 'webmock', '~> 3.1'
+  gem 'selenium-webdriver'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

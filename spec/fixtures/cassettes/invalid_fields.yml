@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://mic-leads.dev-test.makeiteasy.com/api/v1/create?access_token=21bdb69c4089409e0938a33cff040acd&business_name=&email=test@example.com&name=&pAccName=MicDevtest&pGUID=CFFBF53F-6D89-4B5B-8B36-67A97F18EDEB&pPartner=MicDevtest&telephone_number=0123
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Status:
+      - 400 Bad Request
+      Cache-Control:
+      - no-cache
+      X-Runtime:
+      - '0.004816'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - 27dbf85c-532a-438f-9a4e-bb7f895ed5b4
+      Date:
+      - Wed, 27 Jun 2018 09:15:06 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.12
+      Server:
+      - nginx + Phusion Passenger 5.1.12
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"message":"Format errors on validation","errors":["Field ''name''
+        is blank","Field ''name'' wrong format, ''name'' must be composed with 2 separated
+        words (space between)","Field ''business_name'' is blank","Field ''telephone_number''
+        wrong format (must contain have valid phone number with 11 numbers. string
+        max 13 chars)"]}'
+    http_version: 
+  recorded_at: Wed, 27 Jun 2018 09:15:06 GMT
+recorded_with: VCR 4.0.0
